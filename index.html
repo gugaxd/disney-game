@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disney Guessing Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Disney Guessing Game</h1>
+  </header>
+
+  <div id="play-screen">
+    <button id="start-btn">Jogar</button>
+  </div>
+
+  <div id="game-screen" hidden>
+    <div id="challenge-container">
+      <img id="challenge-image" alt="Desafio do dia">
+      <audio id="challenge-audio" preload="metadata"></audio>
+    </div>
+    <form id="guess-form">
+      <input type="text" id="guess-input" list="suggestions" placeholder="Digite sua resposta..." required>
+      <datalist id="suggestions"></datalist>
+      <button type="submit" id="submit-btn">Enviar</button>
+    </form>
+    <div id="feedback"></div>
+    <div id="extra-info"></div>
+    <button id="share-btn" hidden>Compartilhar resultado</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
